@@ -6,14 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="логотип" width="150" height="100">
-        <h1>MounTrain</h1>
-        <img src="images/profile.jpg" alt="профиль" width="100" height="100">
+    <header class="header">
+        <img class="header__logo" src="images/logo.png" alt="логотип" width="150" height="100">
+        <h1 class="header__title">MounTrain</h1>
+        <img class="header__profile" src="images/profile.jpg" alt="профиль" width="100" height="100">
         <button><a href="#">Войти</a></button>
         <button><a href="#">Зарегистрироваться</a></button>
+        <form class="form" action="/">
+            <h1 class="form__title">Вход в личный кабинет</h1>
+            <input type="email" name="email" placeholder="Электронная почта">
+            <input type="password" name="password" placeholder="Пароль">
+            <button class="form__button">Войти</button>
+        </form>
+        <form class="form" action="/">
+            <h1 class="form__title">Регистрация</h1>
+            <input type="email" name="email2" placeholder="Электронная почта">
+            <input type="password" name="password2" placeholder="Пароль">
+            <input type="password" name="confirmpassword" placeholder="Повторите пароль">
+            <button class="form__button">Зарегистрироваться</button>
+        </form>
         <nav>
-            <ul>
+            <ul class="main__menu">
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">Списки</a></li>
                 <li><a href="#">Настройки</a></li>
