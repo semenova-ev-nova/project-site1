@@ -1,3 +1,20 @@
 .main{
     background-color: #f8f2e2;
 }
+.promo__item{
+    width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f0dac5;
+    color: black;
+    list-style-type: none;
+}
+.promo__link{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+}
