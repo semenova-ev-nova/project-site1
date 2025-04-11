@@ -9,6 +9,11 @@
     color: black;
     list-style-type: none;
 }
+.promo__title{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
 .promo__link{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -17,4 +22,32 @@
     text-align: center;
     text-decoration: underline;
     color: black;
+}
+.promo__list{
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.words__title{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+.translate__title{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    padding-top: 15px;
+}
+.words {
+    background-color: antiquewhite;
+}
+.translate {
+    background-color: aliceblue;
+    width: 750px;
+    padding-bottom: 15px;
+    border-radius: 5px;
 }
