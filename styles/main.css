@@ -1,5 +1,6 @@
 .main{
     background-color: #f8f2e2;
+    padding: 10px;
 }
 .promo__item{
     width: 400px;
@@ -43,11 +44,12 @@
     padding-top: 15px;
 }
 .words {
-    background-color: antiquewhite;
+    background-color: #faebd7;
 }
 .translate {
-    background-color: aliceblue;
+    background-color: #faebd7;
     width: 750px;
+    margin-top: 20px;
     padding-bottom: 15px;
     border-radius: 5px;
 }
