@@ -53,3 +53,19 @@
     padding-bottom: 15px;
     border-radius: 5px;
 }
+
+.promo__item {
+ transition: transform 0.3s;
+ transition: box-shadow 0.3s;
+}
+.promo__item:hover {
+ transform: scale(1.03);
+  box-shadow: 0 8px 16px 0
+rgba(0,0,0,0.2);
+}
+.translate {
+ transition: outline 0.3s;
+}
+.translate:focus {
+ outline: 2px solid #218838;
+}
