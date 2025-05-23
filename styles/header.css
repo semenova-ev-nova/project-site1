@@ -71,11 +71,11 @@
  color 0.3s;
 }
 .button:hover {
- background-color: #218838;
+ background-color: #ffb73f;
  color: #ffffff;
 }
 .button:active {
- background-color: #1e7e34;
+ background-color: #ffb73f;
  color: #ffffff;
 }
 
@@ -84,11 +84,11 @@
  color 0.3s;
 }
 .menu__link:hover {
- background-color: #218838;
+ background-color: #ffb73f;
  color: #ffffff;
 }
 .menu__link:active {
- background-color: #1e7e34;
+ background-color: #ffb73f;
  color: #ffffff;
 }
 .input {
@@ -97,5 +97,5 @@
  border-radius: 8px;
 }
 .input:focus {
- outline: 2px solid #218838;
+ outline: 2px solid #ffb73f;
 }
