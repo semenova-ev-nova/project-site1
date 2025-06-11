@@ -69,3 +69,39 @@ rgba(0,0,0,0.2);
 .translate:focus {
  outline: 2px solid #218838;
 }
+.words__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.words__word {
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 20px 5px #f8cca9;
+
+}
+.words__word--word {
+    font-family: 'KaiTi';
+    font-size: 70px;
+    color: #6d3f04;
+    text-align: center;
+    margin:  15px;
+}
+.words__word--pinyin {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.words__word--translate {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.words__word--hanzi {
+    margin-bottom: 5px;
+    text-align: center;
+}
