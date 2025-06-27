@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header container">
+
+        <a class="header__logo-wrap" href="index.html">
+        <img class="header__logo" src="images/logo.png" alt="логотип" width="150" height="100">
+        <h1 class="header__title">MounTrain</h1>
+        </a>
+    <div class="header__buttons">
+        <a class="header__button button" href="#">Войти</a>
+        <a class="header__button button" href="#">Зарегистрироваться</a>
+    </div>
+        
+
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item menu__item--active"><a class="menu__link" href="index.html">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="lists.html">Списки</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Настройки</a></li>
+            </ul>
+        </nav>
+    <div class="searchbar">
+        <img class="searchbar__img" src="images/searchbar.png" alt="лупа" width="30" height="30">
+        <input type="search" class="input"> <button class="searchbar__button button">поиск</button>
+    </div>
+    </header>
+    
+    <main class="main container">
+        <section class="section lists">
+            <h2 class="lists__title">Списки слов</h2>
+                <div class="lists__buttons">
+                    <button class="lists__btn" type="button" data-filter="all">все</button>
+                    <button class="lists__btn" type="button" data-filter="often">часто используемые</button>
+                    <button class="lists__btn" type="button" data-filter="hsk">по уровню hsk</button>
+                    <button class="lists__btn" type="button" data-filter="textbook">по учебникам</button>
+                    <button class="lists__btn" type="button" data-filter="theme">по темам</button>
+                </div>
+                <ul class="lists__list">
+                    <li class="lists__item hsk often">
+                        <p class="lists__name">HSK 1</p>
+                        <p class="lists__description">Количество слов:</p>
+                        <p class="lists__wordcount">51</p>
+                        <button class="lists__button button">Смотреть список</button>
+                    </li>
+                    <li class="lists__item hsk">
+                        <p class="lists__name">HSK 2</p>
+                        <p class="lists__description">Количество слов:</p>
+                        <p class="lists__wordcount">63</p>
+                        <button class="lists__button button">Смотреть список</button>
+                    </li>
+                    <li class="lists__item theme often">
+                        <p class="lists__name">Еда</p>
+                        <p class="lists__description">Количество слов:</p>
+                        <p class="lists__wordcount">250</p>
+                        <button class="lists__button button">Смотреть список</button>
+                    </li>
+                    <li class="lists__item theme">
+                        <p class="lists__name">Животные</p>
+                        <p class="lists__description">Количество слов:</p>
+                        <p class="lists__wordcount">60</p>
+                        <button class="lists__button button">Смотреть список</button>
+                    </li>
+                    <li class="lists__item hsk">
+                        <p class="lists__name">HSK 3</p>
+                        <p class="lists__description">Количество слов:</p>
+                        <p class="lists__wordcount">76</p>
+                        <button class="lists__button button">Смотреть список</button>
+                    </li>
+                    <li class="lists__item textbook often">
+                        <p class="lists__name">НПККЯ 1</p>
+                        <p class="lists__description">Количество слов:</p>
+                        <p class="lists__wordcount">751</p>
+                        <button class="lists__button button">Смотреть список</button>
+                    </li>
+                    <li class="lists__item textbook">
+                        <p class="lists__name">НПККЯ 2</p>
+                        <p class="lists__description">Количество слов:</p>
+                        <p class="lists__wordcount">340</p>
+                        <button class="lists__button button">Смотреть список</button>
+                    </li>
+                    <li class="lists__item textbook">
+                        <p class="lists__name">НПККЯ 3</p>
+                        <p class="lists__description">Количество слов:</p>
+                        <p class="lists__wordcount">456</p>
+                        <button class="lists__button button">Смотреть список</button>
+                    </li>
+
+                </ul>
+        </section>
+
+        <section class="promo">
+            <h2 class="promo__title">Полезное</h2>
+            <ul class="promo__list">
+                <li class="promo__item">
+                    <a class="promo__link" href="#">Улучшить аккаунт до Премиум</a>
+                    <p class="promo__text">Премиум аккаунт позволит Вам добавлять новые слова и редактировтаь значение уже присутствующих на сайте.</p>
+                </li>
+                <li class="promo__item">
+                    <a class="promo__link" href="#">Тренировать слова</a>
+                    <p class="promo__text">Ежедневные тренировки улучшат Ваш уровень языка.</p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer class="footer container">
+        <p class="footer__text">Семёнова Елизавета ИЯ-27АК</p>
+    </footer>
+    
+    <form class="form" action="/">
+        <h1 class="form__title">Вход в личный кабинет</h1>
+        <input type="email" name="email" placeholder="Электронная почта" class="input">
+        <input type="password" name="password" placeholder="Пароль" class="input">
+        <button class="form__button button">Войти</button>
+    </form>
+    <form class="form" action="/">
+        <h1 class="form__title">Регистрация</h1>
+        <input type="email" name="email2" placeholder="Электронная почта" class="input">
+        <input type="password" name="password2" placeholder="Пароль" class="input">
+        <input type="password" name="confirmpassword" placeholder="Повторите пароль" class="input">
+        <button class="form__button button">Зарегистрироваться</button>
+    </form>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

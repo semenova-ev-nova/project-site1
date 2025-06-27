@@ -1,4 +1,6 @@
 .header{
+    position: fixed;
+  
     background-color: #f5e2cd;
     color: #1b1713;
 
@@ -98,4 +100,8 @@
 }
 .input:focus {
  outline: 2px solid #ffb73f;
+}
+
+.header--scroll {
+    background-color: #f5e2cd;
 }

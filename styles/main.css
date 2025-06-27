@@ -1,6 +1,7 @@
 .main{
     background-color: #f8f2e2;
     padding: 10px;
+    padding-top: 300px;
 }
 .promo__item{
     width: 400px;
@@ -105,3 +106,6 @@ rgba(0,0,0,0.2);
     margin-bottom: 5px;
     text-align: center;
 }
+
+
+ 
