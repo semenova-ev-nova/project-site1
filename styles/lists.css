@@ -1,29 +1,29 @@
 
 .lists__list {
-  display: flex; /* Используем flexbox для выравнивания карточек в строку*/
-  gap: 40px; /* промежуток между карточками */
-  flex-wrap: wrap; /*Если карточки не влезут в строку, то перенос на новую*/
+  display: flex; 
+  gap: 40px;
+  flex-wrap: wrap;
 }
-.lists__item {padding: 20px0; /* Отступы сверху и снизу 40px, слева и справа 0 */
-  display: flex; /* Используем flexbox для выравнивания карточек в строку*/
-  flex-direction: column; /* Элементы внутри карточки располагаем в колонку */
+.lists__item {padding: 20px0; 
+  display: flex; 
+  flex-direction: column; 
   justify-content: space-between;
-  align-items: center; /* Центрируемэлементыпогоризонтали */
-  border: 1px solid rgba(20, 16, 36, 0.2); /* задаем рамку с толщиной 1рх и цветом с прозрачностью */
-  border-radius: 10px; /* скруглениеугловна 20px*/
-  text-align: center; /* Центрируемтекст */
-  width: 180px; /* Ширина карточки */
-  height: 280px; /* Высота карточки */
-  transition: transform 0.3s ease-out; /* Плавный переход приувеличении карточки */
+  align-items: center;
+  border: 1px solid rgba(20, 16, 36, 0.2); 
+  border-radius: 10px; 
+  text-align: center; 
+  width: 180px; 
+  height: 280px; 
+  transition: transform 0.3s ease-out;
 }
 .lists__item:hover {
-  background: #281b10; /* Цвет фона при наведении */
-  color: #fff; /* Цвет текста при наведении */
-  transform: scale(1.05); /* Увеличение карточки при наведении */
+  background: #281b10; 
+  color: #fff;
+  transform: scale(1.05); 
 }
 .lists__name {
-    font-weight: 600; /*толщинашрифта */
-    font-size: 30px; /* Размершрифта */
+    font-weight: 600; 
+    font-size: 30px; 
 }
 .lists__description {
     font-style: italic;
@@ -33,28 +33,49 @@
 }
 .lists__button {
     margin: 5px;
-  max-width: 280px; /* Максимальная ширина кнопки «Оставить заявку */
-  height: 79px; /* Высотакнопки */
+  max-width: 280px; 
+  height: 79px; 
 }
 .lists__buttons {
-    padding-top: 20px; /* Отступсверху */
-    display: flex; /* Используем flex для выравнивания кнопок */
-  gap: 30px; /* Промежуток между кнопками */
-  justify-content: center; /* Центрируем кнопки по горизонтали */
+    padding-top: 20px; 
+    display: flex; 
+  gap: 30px; 
+  justify-content: center; 
 }
 .lists__btn {
-  background-color: #211b0d; /* Цветфонакнопокфильтрации */
+  background-color: #211b0d; 
   color: #fff;
-  border-radius: 10px; /* Скруглениеугловкнопокфильтрации*/
-  height: 40px; /* Высотакнопок */
-  border: none; /* Убираемрамку */
+  border-radius: 10px; 
+  height: 40px; 
+  border: none; 
 }
 .lists__btn:hover,
 .lists__btn:focus,
 .lists__btn:active {
-  background-color: #ffb73f; /* Цветфонапринаведении, фокусеиактивации */
-    color: #000000; /* Цвет текста при наведении, фокусе и активации */
+  background-color: #ffb73f; 
+    color: #000000; 
 }
 .hidden {
-    display: none; /* Скрываем элементы с этим классом */
+    display: none; 
+}
+
+.literature__list {
+    margin-top: 30px; 
+    display: flex; 
+    gap: 30px;  
+    justify-content: space-evenly; 
+}
+
+.literature__item {
+    height: 300px;
+    display: flex; 
+    flex-direction: column;  
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center; 
+}
+
+.literature {
+    object-fit: contain;
+    height: 200px; 
 }

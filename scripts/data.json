@@ -1,5 +1,26 @@
 [
     {
-        
+        "image": "images/literature1.jpg",
+        "iconAlt": "Литература 1",
+        "iconWidth": 240,
+        "iconHeight": 110,
+        "title": "Об идиомах",
+        "description": "Небольшие рассказы, объясняющие значение идиом"
+    },
+    {
+        "image": "/images/literature2.jpg",
+        "iconAlt": "Литература 2",
+        "iconWidth": 240,
+        "iconHeight": 110,
+        "title": "Об идиомах",
+        "description": "Небольшие рассказы, объясняющие значение идиом"
+    },
+    {
+        "image": "/images/literature3.jpg",
+        "iconAlt": "Литература 3",
+        "iconWidth": 240,
+        "iconHeight": 110,
+        "title": "Об идиомах",
+        "description": "Небольшие рассказы, объясняющие значение идиом"
     }
 ]

@@ -26,18 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
         *   4. Конец
         */
 
-        const heightHeader = header.offsetHeight;           // определяем высоту блока, включая внутренние отступы
+        const heightHeader = header.offsetHeight;           
 
-        document.addEventListener('scroll', () => {         // навешиваем слушатель событий на scroll страницы и ожидаем ее прокрутку
-
+        document.addEventListener('scroll', () => {         
             console.log('Страница скролится');
 
-            let scrollPageY = this.scrollY;                 // получаем значение насколько прокрутили страницу
+            let scrollPageY = this.scrollY;                
 
-            if (scrollPageY > heightHeader) {               // условие: если расстояние от верха страницы больше высоты элемента
-                header.classList.add('header--scroll')      // устанавливаем класс модификатора на элемент
+            if (scrollPageY > heightHeader) {              
+                header.classList.add('header--scroll')      
             } else {
-                header.classList.remove('header--scroll')   // удаляем класс модификатора у элемента
+                header.classList.remove('header--scroll')   
             }
 
         })
@@ -71,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (wordsContainer) {
 
-        const dataTitleWords = ['服装', '保护', '哪儿'];
+        const dataTitleWords = ['京剧', '星期日', '医院'];
 
         const TitleWords = wordsContainer.querySelectorAll('.words__word--word');
 
@@ -166,3 +165,61 @@ if (cardsLists) {
             listsList.insertAdjacentHTML('beforeend', cardElement);
         }
 }
+
+const cardsCon = document.querySelector(".literature");
+    if (cardsCon) {
+        const cardList = cardsCon.querySelector(".literature__list");
+ 
+        const apiUrl = "data.json";
+        const createCard = (
+            imageUrl,
+            iconAlt,
+            iconWidth,
+            iconHeight,
+            title,
+            description
+        ) => {
+            const card = `
+                <li class="literature__item" href="#">
+                      <img class="literature__img" src="${imageUrl}" alt="${iconAlt}" width="${iconWidth}" height="${iconHeight}">
+                    <h3 class="literature__title">${title}</h3>
+                    <p class="literature__description">${description}</p>
+                </li>
+            `;
+            return card;
+        };
+  // Загрузка данных с сервера
+        fetch(apiUrl)
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data); 
+                console.log(typeof data); 
+ 
+                data.forEach((item) => {
+                    const cardElement = createCard (
+                        item.image,
+                        item.iconAlt,
+                        item.iconWidth,
+                        item.iconHeight,
+                        item.title,
+                        item.description
+                    );
+                    cardList.insertAdjacentHTML('beforeend', cardElement);
+                    });
+            })
+            .catch((error) => {
+                console.error("Ошибка при загрузке данных:", error);
+            });
+        }
+
+const preloader = document.querySelector(".preloader");
+const content = document.querySelector(".content");
+    if (preloader&&content) {
+        setTimeout(() => {
+        preloader.style.opacity = "0";
+     preloader.style.visibility = "hidden";
+
+    content.style.display = "block";
+     preloader.remove();
+     }, 3000); 
+    }
