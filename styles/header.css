@@ -36,17 +36,7 @@
     padding: 10px 16px;
     cursor: pointer;
 }
-.form{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 300px;
-    padding: 10px;
-    margin: 5px;
-    background-color: #f0dac5;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
+
 .header__logo-wrap{
     display: flex;
     align-items: center;

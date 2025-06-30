@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
+/* Фильтрация карточек */
   
   const buttons = document.querySelectorAll(".lists__btn");
   const cardsFilter = document.querySelectorAll(".lists__item");
@@ -66,4 +66,103 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    
+    /* 2. Динамический вывод карточек тегов. Часть 1 (Используем массив с данными) */
+    const wordsContainer = document.querySelector(".words");
+
+    if (wordsContainer) {
+
+        const dataTitleWords = ['服装', '保护', '哪儿'];
+
+        const TitleWords = wordsContainer.querySelectorAll('.words__word--word');
+
+        TitleWords.forEach((item, index) => {
+            item.textContent = dataTitleWords[index];
+        });
+
+    }
+
+    /* 3. Появление форм */
+    const formButtonModal = document.querySelector(".header__button");
+    const modalForm = document.querySelector(".forms");
+if (formButtonModal && modalForm) {
+    formButtonModal.addEventListener("click", () => {
+        modalForm.removeAttribute("hidden");
+    });
+}
+window.addEventListener("click", (event) => {
+    if (event.target === modalForm) {
+        modalForm.setAttribute("hidden", true);
+    }
+});
+
+/* 4. динамический вывод карточек*/
+const cardsLists = document.querySelector('.lists');
+if (cardsLists) {
+    const listsList = cardsLists.querySelector('.lists__list');
+    const cardsListsData = {
+        lists1: {
+            name: 'HSK 1',
+            description: 'Количество слов:',
+            wordcount: '51',
+            button: 'Смотреть список',
+        },
+        lists2: {
+            name: 'HSK 2',
+            description: 'Количество слов:',
+            wordcount: '63',
+            button: 'Смотреть список',
+        },
+        lists3: {
+            name: 'Еда',
+            description: 'Количество слов:',
+            wordcount: '250',
+            button: 'Смотреть список',
+        },
+        lists4: {
+            name: 'Животные',
+            description: 'Количество слов:',
+            wordcount: '60',
+            button: 'Смотреть список',
+        },
+        lists5: {
+            name: 'HSK 3',
+            description: 'Количество слов:',
+            wordcount: '76',
+            button: 'Смотреть список',
+        },
+        lists6: {
+            name: 'НПККЯ 1',
+            description: 'Количество слов:',
+            wordcount: '751',
+            button: 'Смотреть список',
+        },
+        lists7: {
+            name: 'НПККЯ 2',
+            description: 'Количество слов:',
+            wordcount: '340',
+            button: 'Смотреть список',
+        },
+        lists8: {
+            name: 'НПККЯ 3',
+            description: 'Количество слов:',
+            wordcount: '456',
+            button: 'Смотреть список',
+        }
+    }
+        const createCard = (name, description, wordcount, button) => {
+        const card = `
+        <li class="lists__item">
+            <p class="lists__name">${name}</p>
+            <p class="lists__description">${description}</p>
+            <p class="lists__wordcount">${wordcount}</p>
+            <button class="lists__button button>${button}</button>
+        </li>
+        `;
+            return card;
+        }
+        for (const cardKey in cardsListsData) {
+            const card = cardsListsData[cardKey];
+            const cardElement = createCard(card.name, card.description, card.wordcount, card.button);
+            listsList.insertAdjacentHTML('beforeend', cardElement);
+        }
+}

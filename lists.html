@@ -44,7 +44,7 @@
                     <button class="lists__btn" type="button" data-filter="theme">по темам</button>
                 </div>
                 <ul class="lists__list">
-                    <li class="lists__item hsk often">
+                    <!-- <li class="lists__item hsk often">
                         <p class="lists__name">HSK 1</p>
                         <p class="lists__description">Количество слов:</p>
                         <p class="lists__wordcount">51</p>
@@ -91,7 +91,7 @@
                         <p class="lists__description">Количество слов:</p>
                         <p class="lists__wordcount">456</p>
                         <button class="lists__button button">Смотреть список</button>
-                    </li>
+                    </li> -->
 
                 </ul>
         </section>
@@ -115,19 +115,18 @@
         <p class="footer__text">Семёнова Елизавета ИЯ-27АК</p>
     </footer>
     
-    <form class="form" action="/">
-        <h1 class="form__title">Вход в личный кабинет</h1>
-        <input type="email" name="email" placeholder="Электронная почта" class="input">
-        <input type="password" name="password" placeholder="Пароль" class="input">
-        <button class="form__button button">Войти</button>
-    </form>
-    <form class="form" action="/">
-        <h1 class="form__title">Регистрация</h1>
-        <input type="email" name="email2" placeholder="Электронная почта" class="input">
-        <input type="password" name="password2" placeholder="Пароль" class="input">
-        <input type="password" name="confirmpassword" placeholder="Повторите пароль" class="input">
-        <button class="form__button button">Зарегистрироваться</button>
-    </form>
+ <div class="forms" hidden>
+    <section class="form">
+        <div class="form__wrap">
+            <h1 class="form__title">Вход в личный кабинет</h1>
+        </div>
+        <form class="form__form" action="/">
+            <input class="form__input" type="email" name="email" placeholder="Электронная почта">
+            <input class="form__input" type="password" name="password" placeholder="Пароль">
+            <button class="form__button button">Войти</button>
+        </form>
+    </section>
+</div>
 
     <script src="scripts/script.js"></script>
 </body>
