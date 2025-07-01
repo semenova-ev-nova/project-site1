@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Document</title>
@@ -24,7 +25,7 @@
         <h1 class="header__title">MounTrain</h1>
         </a>
     <div class="header__buttons">
-        <a class="header__button button" href="#">Войти</a>
+        <a class="header__button button" href="#">Регистрация</a>
     </div>
         
 
@@ -100,20 +101,23 @@
         <p class="footer__text">Семёнова Елизавета ИЯ-27АК</p>
     </footer>
     
+
 <div class="forms" hidden>
     <section class="form">
         <div class="form__wrap">
-            <h1 class="form__title">Вход в личный кабинет</h1>
+            <h1 class="form__title">Регистрация</h1>
         </div>
-        <form class="form__form" action="/">
-            <input class="form__input" type="email" name="email" placeholder="Электронная почта">
-            <input class="form__input" type="password" name="password" placeholder="Пароль">
-            <button class="form__button button">Войти</button>
+        <form class="form__form" action="/" id="formApplication">
+            <input class="form__input" type="email" name="email" placeholder="Электронная почта" id="email">
+            <input class="form__input" type="password" name="password" placeholder="Пароль" id="password">
+            <input class="form__input" type="password" name="password2" placeholder="Повторите пароль" id="password2">
+            <button class="form__button button" type="submit">Зарегистрироваться</button>
         </form>
+        <p id="form-message" class="form__message"></p>
     </section>
-</div>
 </div>
 
     <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

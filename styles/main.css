@@ -173,11 +173,9 @@ rgba(0,0,0,0.2);
 .dot1 {
     animation: bounce 1s ease-in-out infinite;
 }
-
 .dot2{
     animation: bounce 1s ease-in-out 0.33s infinite;
 }
-
 .dot3 {
     animation: bounce 1s ease-in-out 0.66s infinite;
 }

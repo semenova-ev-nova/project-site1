@@ -93,6 +93,39 @@ window.addEventListener("click", (event) => {
         modalForm.setAttribute("hidden", true);
     }
 });
+//ИСПОЛЬЗОВАНИЕ LOCALSTORAGE задание 3.7
+const formApplication = document.querySelector("#formApplication"); 
+
+if (formApplication) {  
+    
+   formApplication.addEventListener("submit", (event) => {
+     event.preventDefault(); 
+    const email = formApplication.querySelector("#email").value;
+    const password = formApplication.querySelector("#password").value;
+    const password2 = formApplication.querySelector("#password2").value;
+    
+const modalMessage = modalForm.querySelector("#form-message");
+    
+      if (password.length < 3) {
+         modalMessage.textContent = "Пароль должен содержать не менее 3 символов";
+         modalMessage.style.color = "black"; 
+         return;
+      }
+    
+      if (password2 != password) {
+          modalMessage.textContent = "Пароли не совпадают";
+          modalMessage.style.color = "red"; 
+          return;
+      }
+    
+      modalMessage.textContent = "Заявка отправлена!";
+      modalMessage.style.color = "green"; 
+
+      window.localStorage.setItem("password", password);
+      window.localStorage.setItem("password2", password2);
+      window.localStorage.setItem("email", email);
+});
+}
 
 /* 4. динамический вывод карточек*/
 const cardsLists = document.querySelector('.lists');
@@ -223,3 +256,14 @@ const content = document.querySelector(".content");
      preloader.remove();
      }, 3000); 
     }
+
+ // объявляем переменную sliders,куда помещаем элемент с классом swiper
+ const sliders = document.querySelector('.swiper');
+if (sliders) {
+    const  swiper1 = new Swiper(sliders, {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+}
